@@ -19,6 +19,7 @@ window.MyFeed = {
 		onErrorCallback
     ) {
         const {from,to,countBack,firstDataRequest} = periodParams;
+        console.log(111111111, periodParams);
         axios.get('https://demo-feed-data.tradingview.com/history', {
             params: {
                 from,
